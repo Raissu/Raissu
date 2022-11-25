@@ -13,6 +13,7 @@ const raysson = {
         },
         devOps: ["AWS", "Docker🐳"],
         databases: ["Postgres", "sqlite"],
+        ORM: [Sequelize, Prisma]
     },
     architecture: ["Server Architecture", "Progressive web applications", "Single page applications"],
     funFact: "There are two ways to write error-free programs; only the third one works"
