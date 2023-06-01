@@ -2,22 +2,53 @@
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
-```javascript
-const raysson = {
-    pronouns: "He" | "Him",
-    code: ["Javascript", "React", "Typescript", "Python"],
-    askMeAbout: ["games", "tech", "theories"],
-    technologies: {
-        backEnd: {
-            js: ["NodeJs, Express.js"],
-        },
-        devOps: ["AWS", "Docker🐳"],
-        databases: ["Postgres", "sqlite"],
-        ORM: [Sequelize, Prisma]
-    },
-    architecture: ["Server Architecture", "Progressive web applications", "Single page applications"],
-    funFact: "There are two ways to write error-free programs; only the third one works"
-};
+```typescript
+interface Developer {
+    name: string;
+    age: number;
+    location: string;
+    techStack: string[];
+    interests: string[];
+    introduce(): void;
+    showTechStack(): void;
+    showInterests(): void;
+}
+
+class SoftwareDeveloper implements Developer {
+    constructor(
+        public name: string,
+        public age: number,
+        public location: string,
+        public techStack: string[],
+        public interests: string[]
+    ) {}
+
+    introduce(): void {
+        console.log(`Olá, eu sou ${this.name}!`);
+    }
+
+    showTechStack(): void {
+        console.log(`Techs: ${this.techStack.join(', ')}`);
+    }
+
+    showInterests(): void {
+        console.log(`Interesses: ${this.interests.join(', ')}`);
+    }
+}
+
+const developer: Developer = new SoftwareDeveloper(
+    "Raysson Mendes",
+    20,
+    "Brasil",
+    ["TypeScript", "React", "Node.js", "Nextjs", "Prisma", "ExpressJs", "Postgres", "Sqlite"],
+    ["Desenvolvimento web", "Arquitetura de software"]
+);
+
+developer.introduce();
+console.log("Aqui estão algumas informações sobre mim:");
+developer.showTechStack();
+developer.showInterests();
+
 ```
 
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> 😊</em>
