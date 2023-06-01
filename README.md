@@ -41,7 +41,7 @@ const developer: Developer = new SoftwareDeveloper(
     20,
     "Brasil",
     ["TypeScript", "React", "Node.js", "Nextjs", "Prisma", "ExpressJs", "Postgres", "Sqlite"],
-    ["Desenvolvimento web", "Arquitetura de software"]
+    ["Desenvolvimento web", "UX/UI" "Arquitetura de software"]
 );
 
 developer.introduce();
